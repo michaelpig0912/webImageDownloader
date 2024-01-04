@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<style>
+
+html, body {
+  width: 400px; 
+  height: 170px; 
+  overflow: auto; 
+}
+
+  body {
+  font-family: 'Arial', sans-serif;
+  margin: 10px;
+  background-color: #555;
+  color: #aaa;
+}
+
+input[type=text], input[type=number] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  background-color: rgb(46, 69, 107);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #194ca0;
+}
+
+button:active {
+  background-color: #1e3f86;
+}
+
+#download {
+  margin-top: 10px;
+}
+
+</style>
+
+  <head><title>Image Downloader</title></head>
+  <body>
+    <input type="text" id="folderName" placeholder="Enter folder name">
+    <input type="number" id="minWidth" placeholder="Minimum image width (px)">
+    <button id="download">download Image</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
